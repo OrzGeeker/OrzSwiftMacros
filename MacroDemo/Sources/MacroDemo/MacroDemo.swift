@@ -10,7 +10,9 @@
 @freestanding(expression)
 public macro stringify<T>(_ value: T) -> (T, String) = #externalMacro(module: "MacroDemoMacros", type: "StringifyMacro")
 
-@attached(member, names: named(RawValue), named(rawValue), named(init), arbitrary)
+/// OptionSet macro that descripted in swift macro documentation:
+/// https://docs.swift.org/swift-book/documentation/the-swift-programming-language/macros/#Attached-Macros
+@attached(member, names: prefixed(prefix_), named(RawValue), named(rawValue), named(init), arbitrary)
 @attached(extension, conformances: OptionSet)
 public macro OptionSet<RawType>() = #externalMacro(module: "MacroDemoMacros", type: "OptionSetMacro")
 
@@ -22,3 +24,13 @@ public macro OptionSet<RawType>() = #externalMacro(module: "MacroDemoMacros", ty
 /// produces `1094861636 as UInt32`
 @freestanding(expression)
 public macro fourCharacterCode(_: String) -> UInt32 = #externalMacro(module: "MacroDemoMacros", type: "FourCharacterCodeMacro")
+
+
+@attached(peer, names: suffixed(_peer))
+public macro PeerValueWithSuffixName() = #externalMacro(module: "MacroDemoMacros", type: "PeerValueWithSuffixNameMacro")
+
+@attached(peer, names: overloaded)
+public macro AddAsync() = #externalMacro(module: "MacroDemoMacros", type: "AddAsyncMacro")
+
+@attached(memberAttribute)
+public macro memberDeprecated() = #externalMacro(module: "MacroDemoMacros", type: "MemberDeprecatedMacro")

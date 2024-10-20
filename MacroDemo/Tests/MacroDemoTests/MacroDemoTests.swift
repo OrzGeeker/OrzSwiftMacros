@@ -85,15 +85,28 @@ final class MacroDemoTests: XCTestCase {
                     case cherry
                     case fudge
                 }
+
                 typealias RawValue = Int
+
                 var rawValue: RawValue
-                init() { self.rawValue = 0 }
-                init(rawValue: RawValue) { self.rawValue = rawValue }
+
+                init() {
+                    self.rawValue = 0
+                }
+
+                init(rawValue: RawValue) {
+                    self.rawValue = rawValue
+                }
+
                 static let nuts: Self = Self(rawValue: 1 << Options.nuts.rawValue)
+
                 static let cherry: Self = Self(rawValue: 1 << Options.cherry.rawValue)
+
                 static let fudge: Self = Self(rawValue: 1 << Options.fudge.rawValue)
             }
-            extension SundaeToppings: OptionSet { }
+
+            extension SundaeToppings: OptionSet {
+            }
             """#,
             macros: testMacros
         )

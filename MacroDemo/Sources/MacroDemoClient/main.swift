@@ -24,3 +24,23 @@ struct SundaeToppings {
         case fudge
     }
 }
+
+struct TestStruct {
+    
+    @PeerValueWithSuffixName
+    typealias RawValue = Int
+}
+
+@AddAsync
+func testFunc(number: Int, completion: @escaping () -> Void) -> Void {
+    // do something
+    completion()
+}
+
+@memberDeprecated
+struct DeprecatedStruct {
+    
+    var m1: String
+    
+    var m2: Int
+}
