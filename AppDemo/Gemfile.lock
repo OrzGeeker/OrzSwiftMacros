@@ -1,5 +1,5 @@
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: https://mirrors.tuna.tsinghua.edu.cn/rubygems/
   specs:
     CFPropertyList (3.0.7)
       base64
