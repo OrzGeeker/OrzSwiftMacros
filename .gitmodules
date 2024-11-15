@@ -1,0 +1,6 @@
+[submodule "cocoapods-spm"]
+	path = cocoapods-spm
+	url = https://github.com/wangzhizhou/cocoapods-spm.git
+[submodule "CocoaPods"]
+	path = CocoaPods
+	url = https://github.com/CocoaPods/CocoaPods.git
