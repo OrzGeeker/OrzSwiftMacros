@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		053611F7E45647852562FCB9 /* libPods-AppDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E33E73B3504CE432F70F5A7 /* libPods-AppDemo.a */; };
-		2B0FA6FE2CC4066100D89894 /* MacroDemo in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0FA6FD2CC4066100D89894 /* MacroDemo */; };
-		2B0FA7012CC406EE00D89894 /* MacroDemo in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0FA7002CC406EE00D89894 /* MacroDemo */; };
 		2B0FA73F2CC4160900D89894 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA7362CC4160900D89894 /* Assets.xcassets */; };
 		2B0FA7412CC4160900D89894 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA7392CC4160900D89894 /* LaunchScreen.storyboard */; };
 		2B0FA7422CC4160900D89894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0FA73B2CC4160900D89894 /* Main.storyboard */; };
 		2B0FA7432CC4160900D89894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA7352CC4160900D89894 /* AppDelegate.swift */; };
 		2B0FA7442CC4160900D89894 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA73C2CC4160900D89894 /* SceneDelegate.swift */; };
 		2B0FA7452CC4160900D89894 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FA73D2CC4160900D89894 /* ViewController.swift */; };
+		2B5CC4912CE84DA800263625 /* MacroDemo in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0FA6FD2CC4066100D89894 /* MacroDemo */; };
+		2B5CC4922CE84DA800263625 /* MacroDemo in Frameworks */ = {isa = PBXBuildFile; productRef = 2B0FA7002CC406EE00D89894 /* MacroDemo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0FA7012CC406EE00D89894 /* MacroDemo in Frameworks */,
-				2B0FA6FE2CC4066100D89894 /* MacroDemo in Frameworks */,
+				2B5CC4922CE84DA800263625 /* MacroDemo in Frameworks */,
+				2B5CC4912CE84DA800263625 /* MacroDemo in Frameworks */,
 				053611F7E45647852562FCB9 /* libPods-AppDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +130,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					2B0FA6E32CC4062D00D89894 = {
 						CreatedOnToolsVersion = 16.0;
