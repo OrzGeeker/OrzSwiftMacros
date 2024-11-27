@@ -60,7 +60,7 @@ GEM
     cocoapods-plugins (1.0.0)
       nap
     cocoapods-search (1.0.1)
-    cocoapods-spm (0.1.6)
+    cocoapods-spm (0.1.7)
       xcodeproj (>= 1.23.0)
     cocoapods-trunk (1.6.0)
       nap (>= 0.8, < 2.0)
@@ -82,7 +82,7 @@ GEM
       concurrent-ruby (~> 1.0)
     json (2.8.2)
     logger (1.6.1)
-    minitest (5.25.1)
+    minitest (5.25.2)
     molinillo (0.8.0)
     nanaimo (0.4.0)
     nap (1.1.0)
