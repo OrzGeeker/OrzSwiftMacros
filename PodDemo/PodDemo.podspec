@@ -14,5 +14,8 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
   s.source_files = 'PodDemo/Classes/**/*'
   
-  s.spm_dependency 'MacroDemo/MacroDemo'
+  # spm dep
+  # s.spm_dependency 'MacroDemo/MacroDemo'
+  # prebuild dep
+  s.dependency 'MacroDemo'
 end

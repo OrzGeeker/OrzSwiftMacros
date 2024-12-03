@@ -13,3 +13,4 @@ AppDemo/vendor
 AppDemo/build/
 AppDemo/*.xcworkspace/
 .swiftpm/
+.build/

@@ -1,6 +1,19 @@
 platform :ios, '13.0'
-#install! 'cocoapods', :generate_multiple_pod_projects => true
+install! 'cocoapods', :generate_multiple_pod_projects => true
 target 'AppDemo' do
   pod 'PodDemo', :path => '../PodDemo/PodDemo.podspec'
-  spm_pkg "MacroDemo", :path => '../MacroDemo'
+  # source dep
+  # spm_pkg 'MacroDemo', :path => '../MacroDemo'
+  # prebuild dep
+  pod 'MacroDemo', :macro => {
+    :path => '../MacroDemo'
+  }
+end
+ios_deployment_target = "16.0"
+post_install do |installer|
+  installer.native_targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = ios_deployment_target
+    end
+  end
 end
